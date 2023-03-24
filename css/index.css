@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    background-image: url(../images/3bf2f45865bc4a63a663611ea357de4c.gif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1,
+h3,
+h4 {
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px rgb(49, 48, 48);
+}
+
+.form {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 100px;
+    top: 300px;
+}
+
+input {
+    outline: none;
+    border-bottom: 4px solid black;
+    /* border-left: 4px solid #cd0505; */
+    background-color: rgb(1, 212, 212);
+    width: 78%;
+    height: 50px;
+    padding: 14px;
+    font-size: 25px;
+    color: white;
+    animation-name: input;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    height: 49px;
+    width: 20%;
+    outline: none;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes input {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 78%;
+    }
+}

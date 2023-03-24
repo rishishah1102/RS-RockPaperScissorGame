@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to</h1>
+        <h3>Rock Paper Scissor</h3>
+        <h4 id="hi">Game</h4>
+
+        <div class="form">
+            <form action="rps.html">
+                <input type="text" name="Name" id="name" placeholder="Enter your Name" autofocus required autocomplete="off">
+                <!-- <button type="submit" class="btn" onclick="myfunc()">Enter</button> -->
+                <button type="submit" class="btn" onclick="myfunc()">Enter</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function myfunc() {
+        if (document.getElementByTagName(input)[0].value === null) {
+            alert("Please Enter your Name!");
+        }
+        else {
+            window.location.href = "rps.html";
+        }
+    }
+</script>
+<!-- <script src="index.js" type="module/js"></script> -->
+</html>
